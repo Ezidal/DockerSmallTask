@@ -6,12 +6,12 @@ git clone https://github.com/Ezidal/DockerSmallTask.git
 2. Перейти в директорию DockerSmallTask
 3. Запустить команду для сборки образа:
 ```
-docker build -t SergeyApp:9.11 .
+docker build -t sergeyapp:9.11 .
 ```
 4. Дождаться сборки образа (Около 2 минут)
 5. После сборки образа - запустить контейнер командой:
 ```
-docker run --name containerBySergey --rm -it -d -p 80:80 SergeyApp:9.11
+docker run --name containerBySergey --rm -it -d -p 80:80 sergeyapp:9.11
 ```
 Результат работы контейнера можно отследить вбив "localhost" в браузере, при условии что больше ничего не работает на 80 порту - перед взором предстанет приветственная строка Nginx'a
 Также обратившись к "localhost/java" выведется ответ от java приложения
