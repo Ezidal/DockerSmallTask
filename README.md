@@ -8,7 +8,7 @@ git clone https://github.com/Ezidal/DockerSmallTask.git
 ```
 docker build -t sergeyapp:9.11 .
 ```
-4. Дождаться сборки образа (Около 2 минут)
+4. Дождаться сборки образа
 5. После сборки образа - запустить контейнер командой:
 ```
 docker run --name containerBySergey --rm -it -d -p 80:80 sergeyapp:9.11
