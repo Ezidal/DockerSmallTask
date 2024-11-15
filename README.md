@@ -17,6 +17,13 @@ docker run --name containerBySergey --rm -it -d -p 80:80 sergeyapp:9.11
 Также обратившись к "localhost/java" выведется ответ от java приложения
 
 
+Для остановки контейнера используем:
+```
+docker stop containerBySerge
+```
+!!!После остановки контейнер автоматически удалится!!!
+Дабы этого избежать в 5 пункте нужно убрать флаг --rm
+
 ### Содержимое Dockerfile
 ```
 FROM amd64/openjdk:24-slim
