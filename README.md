@@ -1,4 +1,11 @@
-# Содержимое Dockerfile
+# Инструкция для запуска:
+Склонировать репозиторий в свободную директорию 
+```
+git clone 
+```
+
+
+### Содержимое Dockerfile
 ```
 FROM amd64/openjdk:24-slim
 MAINTAINER Sergey
